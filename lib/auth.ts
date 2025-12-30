@@ -85,6 +85,7 @@ export const auth = betterAuth({
         "http://localhost:3000",
         "https://rebblit-backend.vercel.app",
         "transitiontest://",
+        "exp://"
     ],
     plugins: [
         twoFactor(),
