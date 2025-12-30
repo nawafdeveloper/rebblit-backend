@@ -80,7 +80,12 @@ export const auth = betterAuth({
             },
         }
     },
-    trustedOrigins: ["http://localhost:3000", "transitiontest://"],
+    allowMissingOrigin: true,
+    trustedOrigins: [
+        "http://localhost:3000",
+        "https://rebblit-backend.vercel.app",
+        "transitiontest://",
+    ],
     plugins: [
         twoFactor(),
         username(),
